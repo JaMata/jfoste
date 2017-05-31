@@ -24,7 +24,9 @@ default: &default
 development:
   <<: *default
   database: jfoste_development
-  username: jordan
+  username: jfoste
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: localhost
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

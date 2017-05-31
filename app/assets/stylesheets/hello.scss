@@ -1,3 +1,248 @@
 // Place all the styles related to the hello controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// VARIABLES //
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$lime: #B3FFB3;
+
+
+// Element Selectors //
+body {
+	font-size: 12px;
+	font-family: 'Ubuntu', sans-seriff;
+	background: #FFFFFF;
+	background: linear-gradient(#F2F2F2, #FFFFFF) no-repeat;
+}
+
+/* Affects D3 text */
+text {
+	font-size: 3em;
+	fill: #EFEFEF;
+}
+
+footer {
+	display: table;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+// Bootstrap Alterations //
+.jumbotron.jordi {
+	position: relative;
+	height: 50em;
+	margin-bottom: 0;
+	border-bottom: 1px solid $lime;
+	border-radius: 0px;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), image-url('live-background.gif') no-repeat center center;
+}
+
+.row.jordi {
+	color: #EFEFEF;
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+	right: 1em;
+}
+
+.btn-default.jordi {
+	color: #EFEFEF;
+	border-color: $lime;
+	border-radius: 0em;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-default.jordi:hover {
+	border-color: #E6FFE6;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-default.jordi:active {
+	color: #EFEFEF;
+	border-color: #66FF66;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel.jordi {
+	position: relative;
+	height: 50em;
+	border-bottom: 1px solid $lime;
+	border-radius: 0px;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), image-url('live-background.gif') no-repeat center center;
+}
+
+.carousel-inner.jordi {
+	color: #EFEFEF;
+}
+
+.carousel-indicators li {
+	border-color: $lime;
+}
+
+.carousel-indicators .active {
+	border-color: $lime;
+	background-color: $lime;
+}
+
+
+// Footer Styling //
+.footer-link {
+	color: $lime;
+}
+
+.footer-link:hover {
+	color: #66FF66;
+}
+
+.footer-link:active {
+	color: #66FF66;
+}
+
+
+// Fonts & Borders //
+.title-text {
+	padding-top: 0.35em;
+	font-size: 1.75em;
+}
+
+.item-text {
+	margin: 0;
+	font-size: 1.2em;
+}
+
+.sub-text {
+	margin: 0;
+	color: #CCCCCC;
+	font-size: 1em;
+}
+
+.lime {
+	color: $lime;
+}
+
+.lime-border {
+	border-color: $lime;
+}
+
+.lime-outline:hover {
+	outline: 1px solid $lime; // TODO: Add these effects to :active for mobile users.
+}
+
+.inline {
+	display: inline;
+}
+
+
+// D3 SVG //
+#letter-tester {
+	pointer-events: painted;
+	disply: block;
+	margin: auto;
+}
+
+.exit {
+	fill: $lime;
+}
+
+
+ // Images //
+.img-sm {
+	width: 3.5em;
+	height: 3.5em;
+	padding: 0.25em;
+}
+
+.img-md {
+	width: 4.5em;
+	height: inherit;
+}
+
+
+// BUFFERS //
+.container-buffer {
+	position: relative;
+	padding: 0;
+}
+
+.row-buffer {
+	padding-top: 1em;
+	margin-bottom: 0.25em;
+}
+
+.buffer-right {
+	padding-right: 1em;
+}
+
+
+// Media Queries // 
+@media (min-width: $screen-sm-min) {
+	body {
+		font-size: 14px;
+	}
+
+	text {
+		font-size: 3em;
+	}
+
+	.jumbotron.jordi {
+		height: 45em;
+	}
+
+	.carousel.jordi {
+		height: 45em;
+	}
+
+	.container-buffer {
+		padding: 5% 0;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	body {
+		font-size: 16px;
+	}
+
+	text {
+		font-size: 3em;
+	}
+
+	.jumbotron.jordi {
+		height: 40em;
+	}
+
+	.carousel.jordi {
+		height: 40em;
+	}
+
+	.container-buffer {
+		padding: 3% 0 0 0;
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+	body {
+		font-size: 18px;
+	}
+
+	text {
+		font-size: 3.5em;
+	}
+
+	.jumbotron.jordi {
+		height: 30em;
+	}
+
+	.carousel.jordi {
+		height: 30em;
+	}
+
+	.container-buffer {
+		padding: 3% 0 0 0;
+	}
+}

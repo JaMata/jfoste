@@ -1,0 +1,18 @@
+<hr width="60%" />
+<footer>
+	<address>
+		<%= 
+			if current_page?('/')
+				'<strong>Jordan Foster</strong></br>'.html_safe	
+			else
+				link_to '<strong>Jordan Foster</strong></br>'.html_safe, root_path
+			end	
+		%>
+		Waldorf, MD
+	</address>
+	<span>
+		<a href="mailto:jfoste9@gmail.com" target="_top" class="footer-link"><span class="fa fa-envelope-o fa-lg" aria-label="Email" aria-hidden="true"></span></a>
+		<a href="https://www.linkedin.com/in/jfoste/" target="_blank" class="footer-link"><span class="fa fa-linkedin-square fa-lg" aria-label="LinkedIn" aria-hidden="true"></span></a>
+		<a href="https://github.com/JaMata" target="_blank" class="footer-link"><span class="fa fa-github fa-lg" aria-label="GitHub" aria-hidden="true"></span></a>
+	</span>
+</footer>

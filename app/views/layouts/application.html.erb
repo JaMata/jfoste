@@ -4,11 +4,21 @@
     <title>Jfoste</title>
     <%= csrf_meta_tags %>
 
+    <!--Bootstrap css cdn-->
+    <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', media: 'all', integrity: 'sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin: 'anonymous' %>
+    <!--FontAwesome css cdn-->
+    <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', media: 'all' %>
+    <!--Assests-->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--Bootstrap js cdn-->
+    <%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity: 'sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin: 'anonymous' %>
+    <!--JQuery js cdn-->
+    <%= javascript_include_tag 'https://code.jquery.com/jquery-3.2.1.min.js', integrity: 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin: 'anonymous'%>
   </head>
 
   <body>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
