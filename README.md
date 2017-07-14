@@ -1,24 +1,15 @@
-# README
+# Personal Site
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Fork it if you like. 
 
-Things you may want to cover:
+Things:
 
-* Ruby version
+* Ruby version: 2.2.4
 
-* System dependencies
+* Rails version(s): 5.0.2, 4.2.4, 4.2.3
 
-* Configuration
+* Database: psql 9.3.16
 
-* Database creation
+* Master branch deploys to https://jfoste.herokuapp.com
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* '___>'
